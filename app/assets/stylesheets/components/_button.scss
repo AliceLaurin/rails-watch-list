@@ -1,0 +1,56 @@
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.my-button{
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  line-height: 1.2rem;
+  font-weight: 900;
+  background: #acb6e5;
+  padding: 8px 14px 9px;
+  font-size: 15px;
+  border-radius: 4px;
+  color: black;
+  height: 36px;
+  transition: all 75ms ease-in-out;
+  :hover{
+      box-shadow: 0 1px 4px;
+  }
+}
+
+.my-secondary-button{
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  line-height: 1.2rem;
+  font-weight: 900;
+  background: #5E72CD;
+  padding: 8px 14px 9px;
+  font-size: 15px;
+  border-radius: 4px;
+  color: white;
+  // height: 36px;
+  // transition: all 75ms ease-in-out;
+  // :hover{
+  //     box-shadow: 0 1px 4px;
+  // }
+}

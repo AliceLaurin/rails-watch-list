@@ -1,14 +1,24 @@
-<div class="container">
-  <h1>Toutes les listes</h1>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+    <div class="container">
+      <h1>Mon site de films</h1>
+    </div>
+  </div>
 
-  <ul>
-  <% @lists.each do |list| %>
-  <li>
-    <%=  link_to list.name, list_path(list) %>
-  </li>
-  <% end %>
-  </ul>
+<div class="container d-flex flex-wrap justify-content-center">
 
-  <%= link_to "Ajouter une liste", new_list_path %>
+<% @lists.each do |list| %>
+  <%= link_to list_path(list) do %>
+    <div class="card m-4" style="width: 20rem;">
+      <img class="card-img-top" src=<%= list.picture %> alt="Card image cap">
+      <div class="card-body">
+        <div class="mb-3">
+          <h5 class="card-title"><%=list.name %></h5>
+        </div>
+        <div>
+          <%= link_to "Supprimer", list_path(list), class: "my-button", data: {turbo_method: :delete, turbo_confirm: "Vous êtes sûr?"} %>  </div>
+        </div>
+    </div>
+    <% end %>
+<% end %>
 
 </div>
