@@ -1,3 +1,5 @@
+$link-text-color: #fff;
+
 .btn-ghost {
   color: #4A4A4A;
   border: 1px solid #4A4A4A;
@@ -14,6 +16,7 @@
 }
 
 .my-button{
+  font-family: Varela Round;
   text-decoration: none;
   margin-right: 10px;
   display: inline-block;
@@ -22,15 +25,17 @@
   cursor: pointer;
   line-height: 1.2rem;
   font-weight: 900;
-  background: #acb6e5;
+  background: #3D4D76;
   padding: 8px 14px 9px;
   font-size: 15px;
   border-radius: 4px;
-  color: black;
+  color: white;
   height: 36px;
   transition: all 75ms ease-in-out;
-  :hover{
-      box-shadow: 0 1px 4px;
+  &:hover{
+    box-shadow: 0 1px 10px;
+    font-size: 16px;
+
   }
 }
 
@@ -43,11 +48,11 @@
   cursor: pointer;
   line-height: 1.2rem;
   font-weight: 900;
-  background: #5E72CD;
+  background: white;
   padding: 8px 14px 9px;
   font-size: 15px;
   border-radius: 4px;
-  color: white;
+  color: #3D4D76
   // height: 36px;
   // transition: all 75ms ease-in-out;
   // :hover{
