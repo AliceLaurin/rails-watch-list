@@ -1,16 +1,19 @@
-  <div class="banner-2" >
-    <div class="container">
-      <div class="mh-100" style="height: 80px">
-        <h1><%= @list.name %></h1>
-      </div>
-      <div>
-        <%= link_to "Ajouter un film", new_list_bookmark_path(@list), class: "my-secondary-button" %>
-        <span class="badge rounded-pill text-dark"> <%= @list.bookmarks.length %> films</span>
-      </div>
+<div class="banner-4 d-flex">
+  <div class="very-small-banner d-flex align-items-center justify-content-center">
+    <div class="header-list">
+      <h1><%= @list.name %></h1>
+      <%= link_to "Ajouter un film", new_list_bookmark_path(@list), class: "my-button" %>
+      <span class="badge rounded-pill text-dark"> <%= @list.bookmarks.length %> films</span>
     </div>
   </div>
+  <div class="very-small-banner d-flex align-items-center justify-content-center">
+    <div>
+      <%= cl_image_tag @list.picture.key, alt: "cinema", height: 300, class:"img-rounded"%>
+    </div>
+  </div>
+</div>
 
-<div class="d-flex">
+<div class="d-flex movie-container">
   <% @list.bookmarks.each do |bookmark| %>
           <div class="card m-2" style="width: 25rem;">
             <img class="card-img-top" src= <%= bookmark.movie.poster_url %>  alt="Card image cap">

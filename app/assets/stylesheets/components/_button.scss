@@ -1,20 +1,5 @@
 $link-text-color: #fff;
 
-.btn-ghost {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
-  padding: 8px 24px;
-  margin-right: 10px;
-  border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-.btn-ghost:hover {
-  opacity: 1;
-}
-
 .my-button{
   font-family: Varela Round;
   text-decoration: none;
@@ -25,7 +10,7 @@ $link-text-color: #fff;
   cursor: pointer;
   line-height: 1.2rem;
   font-weight: 900;
-  background: #3D4D76;
+  background: #2b5876;
   padding: 8px 14px 9px;
   font-size: 15px;
   border-radius: 4px;
