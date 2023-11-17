@@ -14,7 +14,7 @@
     <% end %>
       <div class="card-body">
         <div class="mb-3">
-          <h5 class="card-title"><%=list.name %></h5>
+          <h5 class="card-title"><%=list.name%></h5>
         </div>
         <div>
           <%= link_to "Supprimer", list_path(list), class: "my-button", data: {turbo_method: :delete, turbo_confirm: "Vous êtes sûr?"} %>  </div>
