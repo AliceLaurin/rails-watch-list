@@ -9,7 +9,9 @@
 <% @lists.each do |list| %>
   <%= link_to list_path(list) do %>
     <div class="card m-4" style="width: 20rem;">
-      <img class="card-img-top" src=<%= list.picture.key %> alt="Card image cap">
+    <% if list.picture.attached? %>
+      <%= cl_image_tag list.picture.key, class: "card-img-top" %>
+    <% end %>
       <div class="card-body">
         <div class="mb-3">
           <h5 class="card-title"><%=list.name %></h5>
